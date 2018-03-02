@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Yhamerou | Just yet another CSS Framework</title>
+    <link rel="stylesheet" href="./yhamerou.css">
+    <script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+
+    <style>
+
+        .row.docx .col,
+        .row.docx .cols {
+            background-color: #E1E1E1;
+            border-radius: 4px;
+            text-align: center;
+        }
+
+        footer {
+            margin-top: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 350px;
+            color: #fff;
+            background-color: #263238;
+        }
+
+        footer ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        footer li {
+            margin: 1rem 0;
+            font-weight: 400;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: #00b0ff;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-content">
+            <div class="nav-banner">
+                <a href="/">Yhamerou.io</a>
+            </div>
+            <ul class="nav-links">
+                <li class="link">
+                    <a href="/">Home</a>
+                </li>
+                <li class="link">
+                    <a href="#components">Components</a>
+                </li>
+                <li class="link">
+                    <a href="#about">About</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container" style="margin-top: 4rem;">
+        <div class="jumbotron">
+            <h1>Yhamerou</h1>
+            <h5>A new minimal, versatile, dead simple CSS Framework in the making. <br> Will replace "The most popular HTML, CSS, and JS library in the world". <br> Hopefully.</h5>
+            <button type="button" class="button-accent"><i class="fas fa-download"></i> Download</button>
+        </div>
+    </div>
+
+    <br><br>
+
+    <div class="container showcase">
+        <div class="row">
+            <div class="six cols">
+                <i class="fas fa-paint-brush fa-5x"></i>
+                <h3>Customizable</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit consectetur laboriosam cumque dignissimos iure,
+                    excepturi molestias suscipit rerum doloremque ducimus commodi repudiandae cum nam pariatur, explicabo autem
+                    aliquid, corrupti rem?</p>
+            </div>
+            <div class="six cols">
+                <i class="fas fa-code fa-5x"></i>
+                <h3>Easy Markup</h3>
+                    <p>Deserunt tenetur, aliquam dolor eveniet ab eos dolorum tempore odit exercitationem placeat autem nihil inventore
+                        optio quidem! Veritatis quo velit fugiat enim, itaque sequi soluta neque. Perferendis dolore magni ab.</p>
+            </div>
+        </div>
+
+        <br><br>
+        
+        <div class="row">
+            <div class="six cols">
+                <i class="fas fa-universal-access fa-5x"></i>
+                <h3>Browser Independent</h3>
+                <p>Iste accusamus aspernatur modi perferendis adipisci dolor, voluptatem, rerum blanditiis commodi optio animi perspiciatis
+                    laboriosam sit sed repellendus fugiat, impedit aliquam ullam eaque quidem. Eum delectus placeat pariatur suscipit mollitia?</p>
+            </div>
+            <div class="six cols">
+                <i class="fas fa-fighter-jet fa-5x"></i>
+                <h3>Lightning Fast</h3>
+                <p>Quisquam in eos dolorem, omnis consectetur, nesciunt perferendis repellat eveniet aut error consequuntur nemo soluta, esse
+                    reiciendis impedit officia distinctio vero animi quibusdam alias natus id similique obcaecati maxime. Sequi!</p>
+            </div>
+        </div>
+
+    </div>
+
+    <br><br>
+    
+    <div id="components" class="container">
+        <h1>Components</h1>
+        <hr>
+
+        <br>
+        
+        <div class="row">
+            <div class="six cols">
+                <h4>Buttons</h4>
+                <a class="button button-outline" href="#">Anchor button</a>
+                <button class="button-outline">Button element</button>
+                <input class="button-outline" value="submit input" type="submit">
+                <input class="button-outline" value="button input" type="button">
+            
+                <br><br>
+            
+                <a class="button button-primary" href="#">Anchor button</a>
+                <button class="button-primary">Button element</button>
+                <input class="button-primary" value="submit input" type="submit">
+                <input class="button-primary" value="button input" type="button">
+
+                <br><br>
+            
+                <a class="button button-accent" href="#">Anchor button</a>
+                <button class="button-accent">Button element</button>
+                <input class="button-accent" value="submit input" type="submit">
+                <input class="button-accent" value="button input" type="button">
+            </div>
+            <div class="six cols">
+<pre><code>&lt;!-- Outline buttons --&gt;
+
+&lt;a class="button button-outline"&gt;Anchor button&lt;/a&gt;
+&lt;button class="button-outline" &gt;Button element&lt;/button&gt;
+&lt;input class="button-outline" value="submit input" type="submit"&gt;
+&lt;input class="button-outline" value="button input" type="button"&gt;
+                    
+&lt;!-- Primary buttons --&gt;
+
+&lt;a class="button button-primary"&gt;Anchor button&lt;/a&gt;
+&lt;button class="button-primary" &gt;Button element&lt;/button&gt;
+&lt;input class="button-primary" value="submit input" type="submit"&gt;
+&lt;input class="button-primary" value="button input" type="button"&gt;
+
+&lt;!-- Accent buttons --&gt;
+
+&lt;a class="button button-accent"&gt;Anchor button&lt;/a&gt;
+&lt;button class="button-accent" &gt;Button element&lt;/button&gt;
+&lt;input class="button-accent" value="submit input" type="submit"&gt;
+&lt;input class="button-accent" value="button input" type="button"&gt;
+
+</code></pre>
+            </div>
+            
+        </div>
+
+        <div class="row">
+            <div class="twelve cols">
+                <h4>Grid System</h4>
+                
+                <div class="row docx">
+                    <div class="one col">
+                        One
+                    </div>
+                    <div class="eleven cols">
+                        Eleven
+                    </div>
+                </div>
+
+                <br><br>
+
+                <div class="row docx">
+                    <div class="two cols">
+                        Two
+                    </div>
+                    <div class="ten cols">
+                        Ten
+                    </div>
+                </div>
+
+                <br><br>
+
+                <div class="row docx">
+                    <div class="three cols">
+                        Three
+                    </div>
+                    <div class="nine cols">
+                        Nine
+                    </div>
+                </div>
+
+                <br><br>
+
+                <div class="row docx">
+                    <div class="four cols">
+                        Four
+                    </div>
+                    <div class="eight cols">
+                        Eight
+                    </div>
+                </div>
+
+                <br><br>
+                
+                <div class="row docx">
+                    <div class="five cols">
+                        Five
+                    </div>
+                    <div class="seven cols">
+                        Seven
+                    </div>
+                </div>
+
+                <br><br>
+                
+                <div class="row docx">
+                    <div class="six cols">
+                        Six
+                    </div>
+                    <div class="six cols">
+                        Six
+                    </div>
+                </div>
+
+                <br><br>
+                
+                <div class="row docx">
+                    <div class="seven cols">
+                        Seven
+                    </div>
+                    <div class="five cols">
+                        Five
+                    </div>
+                </div>
+
+                <br><br>
+                
+                <div class="row docx">
+                    <div class="eight cols">
+                        Eight
+                    </div>
+                    <div class="four cols">
+                        Four
+                    </div>
+                </div>
+
+                <br><br>
+                
+                <div class="row docx">
+                    <div class="nine cols">
+                        Nine
+                    </div>
+                    <div class="three cols">
+                        Three
+                    </div>
+                </div>
+
+                <br><br>
+                
+                <div class="row docx">
+                    <div class="ten cols">
+                        Ten
+                    </div>
+                    <div class="two cols">
+                        Two
+                    </div>
+                </div>
+
+                <br><br>
+                
+                <div class="row docx">
+                    <div class="eleven cols">
+                        Eleven
+                    </div>
+                    <div class="one col">
+                        One
+                    </div>
+                </div>
+
+                <br><br>
+
+                <div class="row docx">
+                    <div class="twelve cols">
+                        Twelve
+                    </div>
+                </div>
+                
+            </div>
+            <div class="twelve cols">
+
+<pre><code>&lt;!-- Grid System --&gt;
+
+&lt;div class="container"&gt;
+
+    &lt;div class="row"&gt;
+        &lt;div class="six cols"&gt;
+            ...
+        &lt;/div&gt;
+        &lt;div class="six cols"&gt;
+            ...
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class="row"&gt;
+        &lt;div class="two cols"&gt;
+            ...
+        &lt;/div&gt;
+        &lt;div class="ten cols"&gt;
+            ...
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class="row"&gt;
+        &lt;div class="twelve cols"&gt;
+            ...
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+&lt;/div&gt;
+
+</code></pre>
+
+            </div>
+        </div>
+
+        <br><br>
+
+        <div class="row">
+            <div class="twelve cols">
+                <h4>Navbar</h4>
+
+                <nav class="navbar">
+                    <div class="navbar-content">
+                        <div class="nav-banner">
+                            <a href="/">Company Name</a>
+                        </div>
+                        <ul class="nav-links">
+                            <li class="link">
+                                <a href="/">Link 1</a>
+                            </li>
+                            <li class="link">
+                                <a href="#components">Link 1</a>
+                            </li>
+                            <li class="link">
+                                <a href="#about">Link 1</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                
+            </div>
+            <div class="twelve cols">
+
+<pre><code>&lt;!-- Navbar --&gt;
+
+&lt;nav class="navbar"&gt;
+    &lt;div class="navbar-content"&gt;
+        &lt;div class="nav-banner"&gt;
+            &lt;a href="#"&gt;Company Name&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;ul class="nav-links"&gt;
+            &lt;li class="link"&gt;
+                &lt;a href="#"&gt;
+                    ...
+                &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class="link"&gt;
+                &lt;a href="#"&gt;
+                    ...
+                &lt;/a&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+&lt;/nav&gt;
+
+<b>Note: You can futher customize it by adding 'light' and 'dark' utility class in the nav element.</b>
+<b>E.g. &lt;nav class="navbar dark"&gt; ... &lt;/nav&gt;</b>
+
+</code></pre>
+
+            </div>
+        </div>
+
+        <br><br>
+
+        <div class="row">
+            <div class="twelve cols">
+                <h4>Jumbotron</h4>
+
+                <div class="jumbotron dark">
+                    <h1>Your title</h1>
+                    <h5>Brief Description</h5>
+                    <button type="button" class="button-accent">Button</button>
+                </div>
+
+            </div>
+            <div class="twelve cols">
+
+<pre><code>&lt;!-- Jumbotron --&gt;
+
+&lt;div class="jumbotron"&gt;
+    &lt;h1&gt;Your title&lt;/h1&gt;
+    &lt;h5&gt;Your title&lt;/h5&gt;
+    &lt;button type="button" class="button-accent"&gt;Button&lt;/button&gt;
+&lt;/div&gt;
+
+<b>Note: Just like the navbar element. You can also customize it by adding 'light' and 'dark' utility class in the jumbotron element.</b>
+<b>E.g. &lt;div class="jumbotron dark"&gt; ... &lt;/div&gt;</b>
+
+</code></pre>
+
+            </div>
+        </div>
+
+        <br><br>
+
+        <div class="row">
+            <div class="twelve cols">
+                <h4>Showcase</h4>
+
+                <div class="showcase">
+                    <div class="row">
+                        <div class="six cols">
+                            <i class="fab fa-html5 fa-5x"></i>
+                            <h3>HTML5</h3>
+                            <p>Brief Description</p>
+                        </div>
+                        <div class="six cols">
+                            <i class="fab fa-css3 fa-5x"></i>
+                            <h3>CSS3</h3>
+                            <p>Brief Description</p>
+                        </div>
+                    </div>        
+                </div>
+
+            </div>
+            <div class="twelve cols">
+
+<pre><code>&lt;!-- Showcase --&gt;
+
+&lt;div class="container"&gt;
+    &lt;div class="showcase"&gt;
+        &lt;div class="row"&gt;
+            &lt;div class="six cols"&gt;
+                &lt;i class="fab fa-html5 fa-5x"&gt;&lt;/i&gt;
+                &lt;h3"&gt;HTML5&lt;/h3&gt;
+                &lt;p"&gt;Brief Description&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class="six cols"&gt;
+                &lt;i class="fab fa-css3 fa-5x"&gt;&lt;/i&gt;
+                &lt;h3"&gt;CSS3&lt;/h3&gt;
+                &lt;p"&gt;Brief Description&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+<b>Note: You can customize the 'i' element. Check out <a href="https://fontawesome.com">fontawesome</a> for more information.</b>
+
+</code></pre>
+
+            </div>
+        </div>
+
+        <br><br>
+
+        <div class="row">
+            <div class="six cols">
+                <h4>Code</h4>
+<pre><code>
+...
+</code></pre>
+            </div>
+            <div class="six cols">
+
+<pre><code>&lt;!-- Code --&gt;
+
+&lt;pre&gt;&lt;code&gt;
+    Your custom code here ...
+&lt;/code&gt;&lt;/pre&gt;
+
+</code></pre>
+
+            </div>
+        </div>
+
+        <br><br>
+
+        <div class="row">
+            <div class="six cols">
+                <h4>Charts</h4>
+                <p>This uses the ChartJs javascript library. You can check out it <a href="http://www.chartjs.org/">here.</a></p>
+
+                <canvas id="myChart" width="400" height="400"></canvas>
+
+            </div>
+            <div class="six cols">
+
+<pre><code>&lt;!-- Charts --&gt;
+
+&lt;canvas id="myChart" width="400" height="400"&gt;&lt;/canvas&gt;
+
+<b>And initialize it via JavaScript.</b>
+
+var ctx = document.getElementById("myChart").getContext('2d'); 
+var myChart = new Chart(ctx, YourOptions);
+
+</code></pre>
+
+            </div>
+        </div>
+
+        <br><br>
+
+        <div class="row">
+            <div class="six cols">
+                <h4>Utilities</h4>
+                <p>Helper classes used to further customize your element.</p>
+
+                <button class="light">Button element</button>
+                <button class="dark">Button element</button>
+
+            </div>
+            <div class="six cols">
+
+<pre><code>&lt;!-- Utilities --&gt;
+
+&lt;YourElement class="light"&gt; ... &lt;/YourElement&gt;
+&lt;YourElement class="dark"&gt; ... &lt;/YourElement&gt;
+
+</code></pre>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="six cols">
+
+            </div>
+            <div class="six cols">
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="six cols">
+
+            </div>
+            <div class="six cols">
+
+            </div>
+        </div>
+    </div>
+
+    <footer id="about">
+        <h1>Team Bonakid</h1>
+        <ul>
+            <li>Mark Angelo Bon (
+            <a href="mailto:mdbon@dilg.gov.ph">mdbon@dilg.gov.ph</a> ) </li>
+            <li>Jaymar Matias (
+            <a href="mailto:jmmatias@dilg.gov.ph">jmmatias@dilg.gov.ph</a> ) </li>
+            <li>Remar Delatina ( <a href="mailto:rcdelatina@dilg.gov.ph">rcdelatina@dilg.gov.ph</a> )</li>
+        </ul>
+    </footer>
+
+    <script>
+        var ctx = document.getElementById("myChart").getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+                datasets: [{
+                    label: '# of Votes',
+                    data: [12, 19, 3, 5, 2, 3],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 159, 64, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255,99,132,1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                }
+            }
+        });
+    </script>
+
+</body>
+</html>
